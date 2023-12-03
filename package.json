@@ -7,7 +7,6 @@
     "test": "mocha --timeout 5000",
     "test-html": "mocha --timeout 5000 --reporter mochawesome",
     "test-junit": "mocha --timeout 5000 --reporter mocha-junit-reporter"
-
   },
   "keywords": [],
   "author": "",
@@ -28,6 +27,8 @@
   "dependencies": {
     "@babel/plugin-transform-runtime": "^7.23.4",
     "dotenv": "^16.3.1",
-    "faker": "^6.6.6"
+    "faker": "^6.6.6",
+    "faker-br": "^0.4.1",
+    "starkbank": "^2.21.0"
   }
 }
