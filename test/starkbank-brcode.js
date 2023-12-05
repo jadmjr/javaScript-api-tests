@@ -27,14 +27,14 @@ describe.only('Spark BRCODE payment', () => {
   it('Create Brcode Payments', async () => {
 
     const paymentsData = [];
-    for (let i = 0; i < 10; i++) { 
+    for (let i = 0; i < 10; i++) {
       var scheduledSoonDate = faker.date.soon();
 
       paymentsData.push({
         brcode: "00020101021226890014br.gov.bcb.pix2567brcode-h.sandbox.starkinfra.com/v2/ace289aac1ce453b9ca64fb12ec525855204000053039865802BR5925Stark Bank S.A. - Institu6009Sao Paulo62070503***63044DDF",
         taxId: faker.br.cpf(),
         description: "automationTest",
-        scheduled: scheduledSoonDate.toISOString().substring(0,10),
+        scheduled: scheduledSoonDate.toISOString().substring(0, 10),
         tags: ['pix', 'qrcode', faker.hacker.adjective()],
         amount: Math.floor(Math.floor(Math.random() * 7982.90) + 1),
         rules: [
@@ -45,12 +45,13 @@ describe.only('Spark BRCODE payment', () => {
         ]
       });
     }
-    
+
     (async () => {
       let payments = await starkbank.brcodePayment.create(paymentsData);
-      for (let payment of payments) {
-        console.log(payment);
-      }
+      /*       for (let payment of payments) {
+              console.log(payment.id);        
+            } */
+      expect(payments).to.not.be.empty;
     })();
 
   });

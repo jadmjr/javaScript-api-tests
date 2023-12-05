@@ -1,87 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="10.009" tests="16" failures="3" skipped="6">
-  <testsuite name="Root Suite" timestamp="2023-12-01T22:54:12" tests="0" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="0.054" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-12-05T16:56:26" tests="0" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="User Posts" timestamp="2023-12-01T22:54:12" tests="2" file="C:\Users\Morfeu\OneDrive\Documentos\stark-bank\javaScript-api-tests\test\posts.js" time="0.000" failures="2">
-    <testcase name="User Posts /posts" time="1.115" classname="/posts">
-      <failure message="expected { message: &apos;Invalid token&apos; } to have deep property &apos;user_id&apos;" type="AssertionError"><![CDATA[AssertionError: expected { message: 'Invalid token' } to have deep property 'user_id'
-    at _callee2$ (test\/posts.js:32:34)
-    at tryCatch (node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
-    at Generator.<anonymous> (node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
-    at Generator.next (node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
-    at asyncGeneratorStep (node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
-    at _next (node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+  <testsuite name="Spark BRCODE payment" timestamp="2023-12-05T16:56:26" tests="1" file="C:\Users\Morfeu\OneDrive\Documentos\stark-bank\javaScript-api-tests\test\starkbank-brcode.js" time="0.053" failures="0">
+    <testcase name="Spark BRCODE payment Create Brcode Payments" time="0.051" classname="Create Brcode Payments">
     </testcase>
-    <testcase name="User Posts GET /posts/:id" time="1.112" classname="GET /posts/:id">
-      <failure message="expected 200 &quot;OK&quot;, got 401 &quot;Unauthorized&quot;" type="Error"><![CDATA[Error: expected 200 "OK", got 401 "Unauthorized"
-    at _callee3$ (test\/posts.js:40:48)
-    at tryCatch (node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
-    at Generator.<anonymous> (node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
-    at Generator.next (node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
-    at asyncGeneratorStep (node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
-    at _next (node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
-    at C:\Users\Morfeu\OneDrive\Documentos\stark-bank\javaScript-api-tests\node_modules\@babel\runtime\helpers\asyncToGenerator.js:27:7
-    at new Promise (<anonymous>)
-    at Context.<anonymous> (node_modules\@babel\runtime\helpers\asyncToGenerator.js:19:12)
-    at processImmediate (node:internal/timers:476:21)
-----
-    at Test._assertStatus (node_modules\supertest\lib\test.js:252:14)
-    at C:\Users\Morfeu\OneDrive\Documentos\stark-bank\javaScript-api-tests\node_modules\supertest\lib\test.js:308:13
-    at Test._assertFunction (node_modules\supertest\lib\test.js:285:13)
-    at Test.assert (node_modules\supertest\lib\test.js:164:23)
-    at localAssert (node_modules\supertest\lib\test.js:120:14)
-    at fn (node_modules\supertest\lib\test.js:125:7)
-    at Test.callback (node_modules\superagent\src\node\index.js:925:3)
-    at fn (node_modules\superagent\src\node\index.js:1166:18)
-    at IncomingMessage.<anonymous> (node_modules\superagent\src\node\parsers\json.js:19:7)
-    at IncomingMessage.emit (node:events:526:35)
-    at endReadableNT (node:internal/streams/readable:1359:12)
-    at processTicksAndRejections (node:internal/process/task_queues:82:21)]]></failure>
-    </testcase>
-  </testsuite>
-  <testsuite name="Negative Tests" timestamp="2023-12-01T22:54:16" tests="2" file="C:\Users\Morfeu\OneDrive\Documentos\stark-bank\javaScript-api-tests\test\posts.js" time="1.639" failures="1">
-    <testcase name="User Posts Negative Tests 401 Authentication Failed" time="0.422" classname="401 Authentication Failed">
-    </testcase>
-    <testcase name="User Posts Negative Tests 422 Validation Failed" time="1.215" classname="422 Validation Failed">
-      <failure message="expected 401 to equal 422" type="AssertionError"><![CDATA[AssertionError: expected 401 to equal 422
-    at _callee5$ (test\/posts.js:71:37)
-    at tryCatch (node_modules\@babel\runtime\helpers\regeneratorRuntime.js:45:16)
-    at Generator.<anonymous> (node_modules\@babel\runtime\helpers\regeneratorRuntime.js:133:17)
-    at Generator.next (node_modules\@babel\runtime\helpers\regeneratorRuntime.js:74:21)
-    at asyncGeneratorStep (node_modules\@babel\runtime\helpers\asyncToGenerator.js:3:24)
-    at _next (node_modules\@babel\runtime\helpers\asyncToGenerator.js:22:9)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-
-      + expected - actual
-
-      -401
-      +422
-      ]]></failure>
-    </testcase>
-  </testsuite>
-  <testsuite name="Users" timestamp="2023-12-01T22:54:18" tests="0" file="C:\Users\Morfeu\OneDrive\Documentos\stark-bank\javaScript-api-tests\test\users-advanced.js" time="0.000" failures="0">
-  </testsuite>
-  <testsuite name="POST" timestamp="2023-12-01T22:54:18" tests="1" file="C:\Users\Morfeu\OneDrive\Documentos\stark-bank\javaScript-api-tests\test\users-advanced.js" time="1.144" failures="0">
-    <testcase name="Users POST /users" time="1.144" classname="/users">
-    </testcase>
-  </testsuite>
-  <testsuite name="GET" timestamp="2023-12-01T22:54:19" tests="3" file="C:\Users\Morfeu\OneDrive\Documentos\stark-bank\javaScript-api-tests\test\users-advanced.js" time="2.571" failures="0">
-    <testcase name="Users GET /users" time="1.192" classname="/users">
-    </testcase>
-    <testcase name="Users GET users/:id" time="0.894" classname="users/:id">
-    </testcase>
-    <testcase name="Users GET users with query params" time="0.485" classname="users with query params">
-    </testcase>
-  </testsuite>
-  <testsuite name="PUT" timestamp="2023-12-01T22:54:21" tests="1" file="C:\Users\Morfeu\OneDrive\Documentos\stark-bank\javaScript-api-tests\test\users-advanced.js" time="0.484" failures="0">
-    <testcase name="Users PUT users/:id" time="0.484" classname="users/:id">
-    </testcase>
-  </testsuite>
-  <testsuite name="DELETE" timestamp="2023-12-01T22:54:22" tests="1" file="C:\Users\Morfeu\OneDrive\Documentos\stark-bank\javaScript-api-tests\test\users-advanced.js" time="0.496" failures="0">
-    <testcase name="Users DELETE users/:id" time="0.495" classname="users/:id">
-    </testcase>
-  </testsuite>
-  <testsuite name="Users" timestamp="2023-12-01T22:54:22" tests="6" file="C:\Users\Morfeu\OneDrive\Documentos\stark-bank\javaScript-api-tests\test\users.js" time="0.000" failures="0">
   </testsuite>
 </testsuites>
